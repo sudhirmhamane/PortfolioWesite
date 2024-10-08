@@ -1,0 +1,517 @@
+/* General styles */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #212121;
+}
+
+/* Navigation bar styles */
+header {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.btn{
+    width: 200px;
+    border: none;
+    color: black;
+    background-color: rgb(255, 153, 0);
+    border-radius: 10px;
+    padding: 7px 14px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.btn:hover{
+    background-color: #04ff00;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+h2{
+    font-size: 45px;
+}
+
+p{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+.cs{
+    font-size: 20px;
+}
+
+/* Section styles */
+main section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#home {
+    background-color: #282c34;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-about{
+    background-color: #ffffff;
+}
+
+/* certificate edit */
+.section-container {
+    background-color: #ffffff;
+}
+
+/* Style for the Certificates section */
+#certificates {
+    padding: 20px;
+    background-color: #ffffff;
+    color: #151313;
+}
+
+#certificates h2 {
+  font-size: 50px;;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.certificate-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.certificate-list li {
+  margin-bottom: 20px;
+}
+
+.certificate-list a {
+  font-size: 24px;
+  color: #111f21;
+  text-decoration: none;
+  background-color: rgb(255, 153, 0);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.certificate-list a:hover {
+  /* text-decoration: underline; */
+  background-color: #04ff00;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.certificate-list p {
+  font-size: 20px;
+  color: #080202;
+  padding: 30px;
+  margin-bottom: 60px;
+
+}
+
+
+/* certificate edit done */
+
+
+.section-projects .project{
+    color: #f4f4f4;
+    background-color: #12343b;
+}
+.section-contact {
+    background-color: #ffffff;
+}
+
+.section-skills {
+    background-color: #ffffff;
+}
+
+.about-details{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-box{
+    background-color: #12343b;
+    border-radius: 20px;
+    padding: 20px;
+    width: 600px;
+    margin: 10px;
+}
+
+.cs{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.hcs{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skill{
+    background-color: #12343b;
+    border-radius: 20px;
+    padding: 20px;
+    /* width: 600px; */
+    margin: 10px;
+    color: #fff;
+}
+
+/* Skill progress bar styles */
+/* .skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 40%;
+    margin: 20px 0;
+}
+
+.progress {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #007bff;
+    height: 25px;
+    transition: width 1s ease-in-out;
+} */
+
+/* Skills Section */
+.section-skills {
+    background-color: #ffffff;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 40%;
+    margin: 20px 0;
+}
+
+.progress {
+    background-color: #f4f4f4;
+    border-radius: 25px;
+    padding: 3px;
+    width: 100%;
+}
+
+.progress-bar {
+    background-color: #007bff;
+    height: 25px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Projects Section
+.section-projects .projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+} */
+
+
+/* Projects Section */
+.section-projects .projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.sudhir{
+    color: blue;
+}
+
+
+
+.cd{
+    font-size: 25px;
+}
+
+/* icon edit/contact edit */
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn-linkedin {
+    background-color: #0077b5;
+}
+
+.btn-unstop {
+    background-color: #0077b5;
+}
+
+.btn-leetcode {
+    background-color: #f89f1b;
+}
+
+.btn-github {
+    background-color: #333;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Icon styles */
+.btn i {
+    margin-right: 8px;
+}
+
+/* Scroll-to-top button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.copy{
+    font-size: 17px;
+}
+
+/* Media queries for responsiveness */
+/* @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-details,
+    .skills-container,
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 90%;
+    }
+} */
+
+
+/* new responsive code  */
+
+/* General responsive settings for body and sections */
+body {
+    font-size: 16px;
+}
+
+/* Mobile-friendly adjustments for navigation */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust spacing between menu items for smaller screens */
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .btn {
+        width: 100%; /* Full width for buttons on smaller screens */
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
+/* Responsive about section */
+@media (max-width: 768px) {
+    .about-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-box {
+        width: 90%; /* Use more width on smaller screens */
+        margin: 10px 0;
+    }
+}
+
+/* Adjust skills section for smaller screens */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 90%; /* Full width for progress bars */
+    }
+}
+
+/* Projects section adjustments for responsiveness */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%; /* Full width for project cards */
+    }
+}
+
+/* Certificates section responsiveness */
+@media (max-width: 768px) {
+    .certificate-list a {
+        font-size: 18px;
+        padding: 10px 20px; /* Larger padding for touch-friendly interaction */
+    }
+
+    .certificate-list p {
+        font-size: 16px;
+    }
+}
+
+/* Footer responsiveness */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px;
+        font-size: 14px; /* Smaller footer text for mobile */
+    }
+
+    .copy {
+        font-size: 14px;
+    }
+}
+
+/* Adjust icon buttons for smaller screens */
+@media (max-width: 768px) {
+    .btn {
+        margin: 10px 0; /* Adjust margin for touch-friendly buttons */
+        padding: 10px;
+    }
+
+    .btn i {
+        margin-right: 5px; /* Slightly reduce space for icons */
+    }
+}
+
+/* Additional adjustments for screens smaller than 480px */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .about-box {
+        width: 100%; /* Full width for about section */
+    }
+
+    .skill, .project, .certificate-list a {
+        width: 100%; /* Full width for better readability */
+    }
+
+    .scroll-to-top {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
